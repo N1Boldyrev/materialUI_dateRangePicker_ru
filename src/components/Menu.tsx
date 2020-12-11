@@ -57,10 +57,12 @@ interface MenuProps {
         onDayHover: (day: Date) => void;
         onMonthNavigate: (marker: symbol, action: NavigationAction) => void;
     };
-    clearEnabled?: boolean;
-    okEnabled?: boolean;
+    clearValue?: string;
+    okValue?: string;
     onClear?: () => void;
     onOk?: () => void;
+    startDateText?: string;
+    endDateText?: string;
 }
 
 const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
@@ -78,10 +80,12 @@ const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
     setDateRange,
     helpers,
     handlers,
-    clearEnabled,
-    okEnabled,
+    clearValue,
+    okValue,
     onClear,
     onOk,
+    startDateText,
+    endDateText,
   } = props;
 
   const { startDate, endDate } = dateRange;
@@ -96,7 +100,7 @@ const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
           <Grid container className={classes.header} alignItems="center">
             <Grid item className={classes.headerItem}>
               <Typography variant="subtitle1">
-                {startDate ? format(startDate, 'DD/MM/YYYY', { locale: localePtBr }) : 'Data início'}
+                {startDate ? format(startDate, 'DD/MM/YYYY', { locale: localePtBr }) : startDateText || 'Start date' }
               </Typography>
             </Grid>
             <Grid item className={classes.headerItem}>
@@ -104,7 +108,7 @@ const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
             </Grid>
             <Grid item className={classes.headerItem}>
               <Typography variant="subtitle1">
-                {endDate ? format(endDate, 'DD/MM/YYYY', { locale: localePtBr }) : 'Data fim'}
+                {endDate ? format(endDate, 'DD/MM/YYYY', { locale: localePtBr }) : endDateText || 'End date'}
               </Typography>
             </Grid>
           </Grid>
@@ -135,7 +139,7 @@ const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
             setRange={setDateRange}
           />
           <div>
-            {clearEnabled && (
+            {clearValue && (
             <ListItem button onClick={() => (onClear ? onClear() : null)}>
               <ListItemText
                 primaryTypographyProps={{
@@ -149,7 +153,7 @@ const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
               </ListItemText>
             </ListItem>
             )}
-            {okEnabled && (
+            {okValue && (
             <ListItem button onClick={() => (onOk ? onOk() : null)}>
               <ListItemText
                 primaryTypographyProps={{

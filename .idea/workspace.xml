@@ -1,29 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15fd6c60-e344-468f-9592-b3cdc9c99d1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/materialui-daterange-picker.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/Menu.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/components/Menu.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.es.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.es.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.es.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js.map" afterDir="false" />
+    <list default="true" id="15fd6c60-e344-468f-9592-b3cdc9c99d1b" name="Default Changelist" comment="translate">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DateRangePicker.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DateRangePicker.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DateRangePickerExporter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DateRangePickerExporter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DateRangePickerWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DateRangePickerWrapper.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Day.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Day.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DefinedRanges.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DefinedRanges.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Month.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Month.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/defaults.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/defaults.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generateClassName.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/generateClassName.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,16 +20,20 @@
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectId" id="1lSpjiqLjoHqLBiHKjCca7VoVHG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="K:/work/tn-face-recognition-app-front" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../work/tn-face-recognition-app-front" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -56,7 +43,7 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="K:\work\tn-face-recognition-app-front" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
-    <property name="ts.external.directory.path" value="C:\Users\NBSP\Desktop\materialui-daterange-picker\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="K:\materialUI_dateRangePicker_ru\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -69,7 +56,17 @@
       <updated>1607600484597</updated>
       <workItem from="1607600486091" duration="3914000" />
       <workItem from="1607611442551" duration="365000" />
+      <workItem from="1607612406735" duration="1785000" />
+      <workItem from="1607678340743" duration="826000" />
     </task>
+    <task id="LOCAL-00001" summary="translate">
+      <created>1607612593722</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607612593722</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,6 +83,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="translate" />
+    <option name="LAST_COMMIT_MESSAGE" value="translate" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -11,6 +11,12 @@ interface DateRangePickerProps {
     minDate?: Date | string;
     maxDate?: Date | string;
     onChange: (dateRange: DateRange) => void;
+    clearValue?: string;
+    okValue?: string;
+    onClear?: () => void;
+    onOk?: () => void;
+    startDateText?: string;
+    endDateText?: string;
 }
 declare const DateRangePicker: React.FunctionComponent<DateRangePickerProps>;
 export default DateRangePicker;

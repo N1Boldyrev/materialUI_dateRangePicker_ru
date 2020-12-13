@@ -63,6 +63,8 @@ interface MenuProps {
     onOk?: () => void;
     startDateText?: string;
     endDateText?: string;
+    cancelValue?: string;
+    onCancel?: () => void;
 }
 
 const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
@@ -86,6 +88,8 @@ const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
     onOk,
     startDateText,
     endDateText,
+    cancelValue,
+    onCancel,
   } = props;
 
   const { startDate, endDate } = dateRange;
@@ -149,7 +153,7 @@ const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
                   },
                 }}
               >
-                Очистить
+                {clearValue}
               </ListItemText>
             </ListItem>
             )}
@@ -163,7 +167,23 @@ const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
                   },
                 }}
               >
-                ОК
+                {okValue}
+              </ListItemText>
+            </ListItem>
+            )}
+          </div>
+          <div>
+            {cancelValue && (
+            <ListItem button onClick={() => (onCancel ? onCancel() : null)}>
+              <ListItemText
+                primaryTypographyProps={{
+                  variant: 'body2',
+                  style: {
+                    color: '#004CDA',
+                  },
+                }}
+              >
+                {cancelValue}
               </ListItemText>
             </ListItem>
             )}

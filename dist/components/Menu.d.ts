@@ -18,10 +18,12 @@ interface MenuProps {
         onDayHover: (day: Date) => void;
         onMonthNavigate: (marker: symbol, action: NavigationAction) => void;
     };
-    clearEnabled?: boolean;
-    okEnabled?: boolean;
+    clearValue?: string;
+    okValue?: string;
     onClear?: () => void;
     onOk?: () => void;
+    startDateText?: string;
+    endDateText?: string;
 }
 declare const Menu: React.FunctionComponent<MenuProps>;
 export default Menu;

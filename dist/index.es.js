@@ -6216,7 +6216,7 @@ var useStyles$1 = makeStyles(function (theme) { return ({
     },
     filled: {
         '&:hover': {
-            backgroundColor: theme.palette.primary.dark,
+            backgroundColor: '#004CDA',
         },
         backgroundColor: '#004CDA',
     },
@@ -6319,7 +6319,7 @@ var useStyles$3 = makeStyles(function (theme) { return ({
 }); });
 var Menu = function (props) {
     var classes = useStyles$3();
-    var ranges = props.ranges, dateRange = props.dateRange, minDate = props.minDate, maxDate = props.maxDate, firstMonth = props.firstMonth, setFirstMonth = props.setFirstMonth, secondMonth = props.secondMonth, setSecondMonth = props.setSecondMonth, setDateRange = props.setDateRange, helpers = props.helpers, handlers = props.handlers, clearEnabled = props.clearEnabled, okEnabled = props.okEnabled, onClear = props.onClear, onOk = props.onOk;
+    var ranges = props.ranges, dateRange = props.dateRange, minDate = props.minDate, maxDate = props.maxDate, firstMonth = props.firstMonth, setFirstMonth = props.setFirstMonth, secondMonth = props.secondMonth, setSecondMonth = props.setSecondMonth, setDateRange = props.setDateRange, helpers = props.helpers, handlers = props.handlers, clearValue = props.clearValue, okValue = props.okValue, onClear = props.onClear, onOk = props.onOk, startDateText = props.startDateText, endDateText = props.endDateText;
     var startDate = dateRange.startDate, endDate = dateRange.endDate;
     var canNavigateCloser = dateFns_19(secondMonth, firstMonth) >= 2;
     var commonProps = {
@@ -6330,11 +6330,11 @@ var Menu = function (props) {
             React__default.createElement(Grid, null,
                 React__default.createElement(Grid, { container: true, className: classes.header, alignItems: "center" },
                     React__default.createElement(Grid, { item: true, className: classes.headerItem },
-                        React__default.createElement(Typography, { variant: "subtitle1" }, startDate ? dateFns_50(startDate, 'DD/MM/YYYY', { locale: pt }) : 'Data início')),
+                        React__default.createElement(Typography, { variant: "subtitle1" }, startDate ? dateFns_50(startDate, 'DD/MM/YYYY', { locale: pt }) : startDateText || 'Start date')),
                     React__default.createElement(Grid, { item: true, className: classes.headerItem },
                         React__default.createElement(ArrowRightAlt$1, { color: "action" })),
                     React__default.createElement(Grid, { item: true, className: classes.headerItem },
-                        React__default.createElement(Typography, { variant: "subtitle1" }, endDate ? dateFns_50(endDate, 'DD/MM/YYYY', { locale: pt }) : 'Data fim'))),
+                        React__default.createElement(Typography, { variant: "subtitle1" }, endDate ? dateFns_50(endDate, 'DD/MM/YYYY', { locale: pt }) : endDateText || 'End date'))),
                 React__default.createElement(Divider, null),
                 React__default.createElement(Grid, { container: true, direction: "row", justify: "center", wrap: "nowrap" },
                     React__default.createElement(Month, __assign({}, commonProps, { value: firstMonth, setValue: setFirstMonth, navState: [true, canNavigateCloser], marker: MARKERS.FIRST_MONTH })),
@@ -6344,14 +6344,14 @@ var Menu = function (props) {
             React__default.createElement(Grid, null,
                 React__default.createElement(DefinedRanges, { selectedRange: dateRange, ranges: ranges, setRange: setDateRange }),
                 React__default.createElement("div", null,
-                    clearEnabled && (React__default.createElement(ListItem, { button: true, onClick: function () { return (onClear ? onClear() : null); } },
+                    clearValue && (React__default.createElement(ListItem, { button: true, onClick: function () { return (onClear ? onClear() : null); } },
                         React__default.createElement(ListItemText, { primaryTypographyProps: {
                                 variant: 'body2',
                                 style: {
                                     color: '#004CDA',
                                 },
                             } }, "\u041E\u0447\u0438\u0441\u0442\u0438\u0442\u044C"))),
-                    okEnabled && (React__default.createElement(ListItem, { button: true, onClick: function () { return (onOk ? onOk() : null); } },
+                    okValue && (React__default.createElement(ListItem, { button: true, onClick: function () { return (onOk ? onOk() : null); } },
                         React__default.createElement(ListItemText, { primaryTypographyProps: {
                                 variant: 'body2',
                                 style: {
@@ -6367,7 +6367,7 @@ var MARKERS = {
 };
 var DateRangePicker = function (props) {
     var today = new Date();
-    var open = props.open, onChange = props.onChange, initialDateRange = props.initialDateRange, minDate = props.minDate, maxDate = props.maxDate, _a = props.definedRanges, definedRanges = _a === void 0 ? defaultRanges : _a;
+    var open = props.open, onChange = props.onChange, initialDateRange = props.initialDateRange, minDate = props.minDate, maxDate = props.maxDate, _a = props.definedRanges, definedRanges = _a === void 0 ? defaultRanges : _a, clearValue = props.clearValue, okValue = props.okValue, onClear = props.onClear, onOk = props.onOk, startDateText = props.startDateText, endDateText = props.endDateText;
     var minDateValid = parseOptionalDate(minDate, dateFns_10(today, -10));
     var maxDateValid = parseOptionalDate(maxDate, dateFns_10(today, 10));
     var _b = getValidatedMonths(initialDateRange || {}, minDateValid, maxDateValid), intialFirstMonth = _b[0], initialSecondMonth = _b[1];
@@ -6449,7 +6449,7 @@ var DateRangePicker = function (props) {
         onDayHover: onDayHover,
         onMonthNavigate: onMonthNavigate,
     };
-    return open ? (createElement(Menu, { dateRange: dateRange, minDate: minDateValid, maxDate: maxDateValid, ranges: definedRanges, firstMonth: firstMonth, secondMonth: secondMonth, setFirstMonth: setFirstMonthValidated, setSecondMonth: setSecondMonthValidated, setDateRange: setDateRangeValidated, helpers: helpers, handlers: handlers })) : null;
+    return open ? (createElement(Menu, { dateRange: dateRange, minDate: minDateValid, maxDate: maxDateValid, ranges: definedRanges, firstMonth: firstMonth, secondMonth: secondMonth, setFirstMonth: setFirstMonthValidated, setSecondMonth: setSecondMonthValidated, setDateRange: setDateRangeValidated, helpers: helpers, handlers: handlers, okValue: okValue, clearValue: clearValue, onOk: onOk, onClear: onClear, startDateText: startDateText, endDateText: endDateText })) : null;
 };
 
 /* eslint-disable jsx-a11y/no-static-element-interactions */

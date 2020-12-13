@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15fd6c60-e344-468f-9592-b3cdc9c99d1b" name="Default Changelist" comment="translate">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/DateRangePicker.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/components/DateRangePicker.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/Menu.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/components/Menu.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.es.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.es.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.es.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DateRangePicker.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DateRangePicker.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu.tsx" afterDir="false" />
+    <list default="true" id="15fd6c60-e344-468f-9592-b3cdc9c99d1b" name="Default Changelist" comment="add close button">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +54,7 @@
       <workItem from="1607611442551" duration="365000" />
       <workItem from="1607612406735" duration="1785000" />
       <workItem from="1607678340743" duration="826000" />
-      <workItem from="1607862646838" duration="824000" />
+      <workItem from="1607862646838" duration="931000" />
     </task>
     <task id="LOCAL-00001" summary="translate">
       <created>1607612593722</created>
@@ -71,7 +63,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607612593722</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add close button">
+      <created>1607863504660</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607863504660</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,7 +91,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="translate" />
-    <option name="LAST_COMMIT_MESSAGE" value="translate" />
+    <MESSAGE value="add close button" />
+    <option name="LAST_COMMIT_MESSAGE" value="add close button" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

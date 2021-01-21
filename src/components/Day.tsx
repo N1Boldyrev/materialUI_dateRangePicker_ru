@@ -10,41 +10,6 @@ import {
 } from '@material-ui/core';
 import { combine } from '../utils';
 
-const useStyles = makeStyles((theme: Theme) => ({
-  leftBorderRadius: {
-    borderRadius: '50% 0 0 50%',
-  },
-  rightBorderRadius: {
-    borderRadius: '0 50% 50% 0',
-  },
-  buttonContainer: {
-    display: 'flex',
-  },
-  button: {
-    height: 36,
-    width: 36,
-    padding: 0,
-  },
-  buttonText: {
-    lineHeight: 1.6,
-  },
-  outlined: {
-    border: '1px solid #004CDA',
-  },
-  filled: {
-    '&:hover': {
-      backgroundColor: '#004CDA',
-    },
-    backgroundColor: '#004CDA',
-  },
-  highlighted: {
-    backgroundColor: theme.palette.action.hover,
-  },
-  contrast: {
-    color: theme.palette.primary.contrastText,
-  },
-}));
-
 interface DayProps {
   filled?: boolean;
   outlined?: boolean;
@@ -55,6 +20,7 @@ interface DayProps {
   onClick?: () => void;
   onHover?: () => void;
   value: number | string;
+  pickerColor: string
 }
 
 const Day: React.FunctionComponent<DayProps> = ({
@@ -66,8 +32,43 @@ const Day: React.FunctionComponent<DayProps> = ({
   filled,
   onClick,
   onHover,
-  value,
+  value, pickerColor,
 }: DayProps) => {
+  const useStyles = makeStyles((theme: Theme) => ({
+    leftBorderRadius: {
+      borderRadius: '50% 0 0 50%',
+    },
+    rightBorderRadius: {
+      borderRadius: '0 50% 50% 0',
+    },
+    buttonContainer: {
+      display: 'flex',
+    },
+    button: {
+      height: 36,
+      width: 36,
+      padding: 0,
+    },
+    buttonText: {
+      lineHeight: 1.6,
+    },
+    outlined: {
+      border: '1px solid #004CDA',
+    },
+    filled: {
+      '&:hover': {
+        backgroundColor: pickerColor,
+      },
+      backgroundColor: pickerColor,
+    },
+    highlighted: {
+      backgroundColor: theme.palette.action.hover,
+    },
+    contrast: {
+      color: theme.palette.primary.contrastText,
+    },
+  }));
+
   const classes = useStyles();
 
   return (

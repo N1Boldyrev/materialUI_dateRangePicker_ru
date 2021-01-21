@@ -17,6 +17,8 @@ interface DateRangePickerProps {
     onOk?: () => void;
     startDateText?: string;
     endDateText?: string;
+    cancelValue?: string;
+    onCancel?: () => void;
 }
 declare const DateRangePicker: React.FunctionComponent<DateRangePickerProps>;
 export default DateRangePicker;

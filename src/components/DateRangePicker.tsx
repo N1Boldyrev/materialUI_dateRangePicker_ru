@@ -44,6 +44,7 @@ interface DateRangePickerProps {
   endDateText?: string;
   cancelValue?: string;
   onCancel?: () => void;
+  pickerColor: string
 }
 
 const DateRangePicker: React.FunctionComponent<DateRangePickerProps> = (
@@ -66,6 +67,7 @@ const DateRangePicker: React.FunctionComponent<DateRangePickerProps> = (
     endDateText,
     cancelValue,
     onCancel,
+    pickerColor,
   } = props;
 
   const minDateValid = parseOptionalDate(minDate, addYears(today, -10));
@@ -188,6 +190,7 @@ const DateRangePicker: React.FunctionComponent<DateRangePickerProps> = (
       endDateText={endDateText}
       cancelValue={cancelValue}
       onCancel={onCancel}
+      pickerColor={pickerColor}
     />
   ) : null;
 };

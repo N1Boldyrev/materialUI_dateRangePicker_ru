@@ -62,6 +62,7 @@ interface MonthProps {
     onDayHover: (day: Date) => void;
     onMonthNavigate: (marker: symbol, action: NavigationAction) => void;
   };
+  pickerColor: string
 }
 
 const Month: React.FunctionComponent<MonthProps> = (props: MonthProps) => {
@@ -76,6 +77,7 @@ const Month: React.FunctionComponent<MonthProps> = (props: MonthProps) => {
     setValue: setDate,
     minDate,
     maxDate,
+    pickerColor,
   } = props;
 
   // eslint-disable-next-line react/destructuring-assignment
@@ -138,6 +140,7 @@ const Month: React.FunctionComponent<MonthProps> = (props: MonthProps) => {
                     onClick={() => handlers.onDayClick(day)}
                     onHover={() => handlers.onDayHover(day)}
                     value={getDate(day)}
+                    pickerColor={pickerColor}
                   />
                 );
               })}

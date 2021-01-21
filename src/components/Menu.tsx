@@ -65,6 +65,7 @@ interface MenuProps {
     endDateText?: string;
     cancelValue?: string;
     onCancel?: () => void;
+    pickerColor:string
 }
 
 const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
@@ -89,7 +90,7 @@ const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
     startDateText,
     endDateText,
     cancelValue,
-    onCancel,
+    onCancel, pickerColor,
   } = props;
 
   const { startDate, endDate } = dateRange;
@@ -124,6 +125,7 @@ const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
               setValue={setFirstMonth}
               navState={[true, canNavigateCloser]}
               marker={MARKERS.FIRST_MONTH}
+              pickerColor={pickerColor}
             />
             <div className={classes.divider} />
             <Month
@@ -132,6 +134,7 @@ const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
               setValue={setSecondMonth}
               navState={[canNavigateCloser, true]}
               marker={MARKERS.SECOND_MONTH}
+              pickerColor={pickerColor}
             />
           </Grid>
         </Grid>
@@ -149,7 +152,7 @@ const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
                 primaryTypographyProps={{
                   variant: 'body2',
                   style: {
-                    color: '#004CDA',
+                    color: pickerColor,
                   },
                 }}
               >
@@ -163,7 +166,7 @@ const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
                 primaryTypographyProps={{
                   variant: 'body2',
                   style: {
-                    color: '#004CDA',
+                    color: pickerColor,
                   },
                 }}
               >
@@ -179,7 +182,7 @@ const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
                 primaryTypographyProps={{
                   variant: 'body2',
                   style: {
-                    color: '#004CDA',
+                    color: pickerColor,
                   },
                 }}
               >

@@ -6326,7 +6326,7 @@ var useStyles$3 = core.makeStyles(function (theme) { return ({
 }); });
 var Menu = function (props) {
     var classes = useStyles$3();
-    var ranges = props.ranges, dateRange = props.dateRange, minDate = props.minDate, maxDate = props.maxDate, firstMonth = props.firstMonth, setFirstMonth = props.setFirstMonth, secondMonth = props.secondMonth, setSecondMonth = props.setSecondMonth, setDateRange = props.setDateRange, helpers = props.helpers, handlers = props.handlers, clearValue = props.clearValue, okValue = props.okValue, onClear = props.onClear, onOk = props.onOk, startDateText = props.startDateText, endDateText = props.endDateText;
+    var ranges = props.ranges, dateRange = props.dateRange, minDate = props.minDate, maxDate = props.maxDate, firstMonth = props.firstMonth, setFirstMonth = props.setFirstMonth, secondMonth = props.secondMonth, setSecondMonth = props.setSecondMonth, setDateRange = props.setDateRange, helpers = props.helpers, handlers = props.handlers, clearValue = props.clearValue, okValue = props.okValue, onClear = props.onClear, onOk = props.onOk, startDateText = props.startDateText, endDateText = props.endDateText, cancelValue = props.cancelValue, onCancel = props.onCancel;
     var startDate = dateRange.startDate, endDate = dateRange.endDate;
     var canNavigateCloser = dateFns_19(secondMonth, firstMonth) >= 2;
     var commonProps = {
@@ -6357,14 +6357,21 @@ var Menu = function (props) {
                                 style: {
                                     color: '#004CDA',
                                 },
-                            } }, "\u041E\u0447\u0438\u0441\u0442\u0438\u0442\u044C"))),
+                            } }, clearValue))),
                     okValue && (React__default.createElement(core.ListItem, { button: true, onClick: function () { return (onOk ? onOk() : null); } },
                         React__default.createElement(core.ListItemText, { primaryTypographyProps: {
                                 variant: 'body2',
                                 style: {
                                     color: '#004CDA',
                                 },
-                            } }, "\u041E\u041A"))))))));
+                            } }, okValue)))),
+                React__default.createElement("div", null, cancelValue && (React__default.createElement(core.ListItem, { button: true, onClick: function () { return (onCancel ? onCancel() : null); } },
+                    React__default.createElement(core.ListItemText, { primaryTypographyProps: {
+                            variant: 'body2',
+                            style: {
+                                color: '#004CDA',
+                            },
+                        } }, cancelValue))))))));
 };
 
 /* eslint-disable no-multi-assign */
@@ -6374,7 +6381,7 @@ var MARKERS = {
 };
 var DateRangePicker = function (props) {
     var today = new Date();
-    var open = props.open, onChange = props.onChange, initialDateRange = props.initialDateRange, minDate = props.minDate, maxDate = props.maxDate, _a = props.definedRanges, definedRanges = _a === void 0 ? defaultRanges : _a, clearValue = props.clearValue, okValue = props.okValue, onClear = props.onClear, onOk = props.onOk, startDateText = props.startDateText, endDateText = props.endDateText;
+    var open = props.open, onChange = props.onChange, initialDateRange = props.initialDateRange, minDate = props.minDate, maxDate = props.maxDate, _a = props.definedRanges, definedRanges = _a === void 0 ? defaultRanges : _a, clearValue = props.clearValue, okValue = props.okValue, onClear = props.onClear, onOk = props.onOk, startDateText = props.startDateText, endDateText = props.endDateText, cancelValue = props.cancelValue, onCancel = props.onCancel;
     var minDateValid = parseOptionalDate(minDate, dateFns_10(today, -10));
     var maxDateValid = parseOptionalDate(maxDate, dateFns_10(today, 10));
     var _b = getValidatedMonths(initialDateRange || {}, minDateValid, maxDateValid), intialFirstMonth = _b[0], initialSecondMonth = _b[1];
@@ -6456,7 +6463,7 @@ var DateRangePicker = function (props) {
         onDayHover: onDayHover,
         onMonthNavigate: onMonthNavigate,
     };
-    return open ? (React.createElement(Menu, { dateRange: dateRange, minDate: minDateValid, maxDate: maxDateValid, ranges: definedRanges, firstMonth: firstMonth, secondMonth: secondMonth, setFirstMonth: setFirstMonthValidated, setSecondMonth: setSecondMonthValidated, setDateRange: setDateRangeValidated, helpers: helpers, handlers: handlers, okValue: okValue, clearValue: clearValue, onOk: onOk, onClear: onClear, startDateText: startDateText, endDateText: endDateText })) : null;
+    return open ? (React.createElement(Menu, { dateRange: dateRange, minDate: minDateValid, maxDate: maxDateValid, ranges: definedRanges, firstMonth: firstMonth, secondMonth: secondMonth, setFirstMonth: setFirstMonthValidated, setSecondMonth: setSecondMonthValidated, setDateRange: setDateRangeValidated, helpers: helpers, handlers: handlers, okValue: okValue, clearValue: clearValue, onOk: onOk, onClear: onClear, startDateText: startDateText, endDateText: endDateText, cancelValue: cancelValue, onCancel: onCancel })) : null;
 };
 
 /* eslint-disable jsx-a11y/no-static-element-interactions */

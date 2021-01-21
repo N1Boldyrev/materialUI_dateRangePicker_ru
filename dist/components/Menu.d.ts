@@ -24,6 +24,8 @@ interface MenuProps {
     onOk?: () => void;
     startDateText?: string;
     endDateText?: string;
+    cancelValue?: string;
+    onCancel?: () => void;
 }
 declare const Menu: React.FunctionComponent<MenuProps>;
 export default Menu;

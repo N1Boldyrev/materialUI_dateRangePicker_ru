@@ -20,7 +20,7 @@ interface DayProps {
   onClick?: () => void;
   onHover?: () => void;
   value: number | string;
-  pickerColor: string
+  pickerColor?: string
 }
 
 const Day: React.FunctionComponent<DayProps> = ({
@@ -53,7 +53,7 @@ const Day: React.FunctionComponent<DayProps> = ({
       lineHeight: 1.6,
     },
     outlined: {
-      border: '1px solid #004CDA',
+      border: `1px solid ${pickerColor}`,
     },
     filled: {
       '&:hover': {

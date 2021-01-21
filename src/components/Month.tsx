@@ -62,7 +62,7 @@ interface MonthProps {
     onDayHover: (day: Date) => void;
     onMonthNavigate: (marker: symbol, action: NavigationAction) => void;
   };
-  pickerColor: string
+  pickerColor?: string
 }
 
 const Month: React.FunctionComponent<MonthProps> = (props: MonthProps) => {

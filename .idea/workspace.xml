@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15fd6c60-e344-468f-9592-b3cdc9c99d1b" name="Default Changelist" comment="update version">
+    <list default="true" id="15fd6c60-e344-468f-9592-b3cdc9c99d1b" name="Default Changelist" comment="change picker main color">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/DateRangePicker.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/components/DateRangePicker.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/Menu.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/components/Menu.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.es.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.es.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.es.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DateRangePicker.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DateRangePicker.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Day.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Day.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu.tsx" afterDir="false" />
@@ -68,6 +61,7 @@
       <workItem from="1607862646838" duration="931000" />
       <workItem from="1607930836510" duration="98000" />
       <workItem from="1611216994997" duration="949000" />
+      <workItem from="1611227431561" duration="551000" />
     </task>
     <task id="LOCAL-00001" summary="translate">
       <created>1607612593722</created>

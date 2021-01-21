@@ -65,7 +65,7 @@ interface MenuProps {
     endDateText?: string;
     cancelValue?: string;
     onCancel?: () => void;
-    pickerColor:string
+    pickerColor?:string
 }
 
 const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
@@ -90,7 +90,8 @@ const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
     startDateText,
     endDateText,
     cancelValue,
-    onCancel, pickerColor,
+    onCancel,
+    pickerColor,
   } = props;
 
   const { startDate, endDate } = dateRange;

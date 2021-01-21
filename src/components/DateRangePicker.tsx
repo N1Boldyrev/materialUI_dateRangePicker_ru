@@ -44,7 +44,7 @@ interface DateRangePickerProps {
   endDateText?: string;
   cancelValue?: string;
   onCancel?: () => void;
-  pickerColor: string
+  pickerColor?: string
 }
 
 const DateRangePicker: React.FunctionComponent<DateRangePickerProps> = (
